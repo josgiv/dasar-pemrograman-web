@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4; 
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #4B0082, #FF1493);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navbar:hover {
+    background: linear-gradient(to right, #800080, #FF69B4); /* Gradient on hover */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%; /* Rounded corners */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f0f0f0;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar.sticky {
+        position: fixed;
+    }
+
+    .navbar.sticky:hover {
+        background: linear-gradient(to right, #800080, #FF69B4); /* Gradient on hover */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        padding: 16px 0;
+        text-align: center;
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(to right, #4B0082, #FF1493); /* Gradient */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    padding-top: 120px;
+    border-radius: 10px; 
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #800080, #FF69B4); /* Gradient */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.owner-info-gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 50%;
+    height: auto;
+}
+
+
+.owner-info img {
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.owner-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.owner-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #4B0082;
+    color: #fff;
+}
+
+/* Popular Posts Styling */
+.popular-posts {
+    margin-bottom: 30px;
+}
+
+.popular-posts h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.popular-posts ul li {
+    margin-bottom: 10px;
+}
+
+/* Share Button Styling */
+.share-button {
+    text-align: center;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.share-button button {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin for spacing between buttons */
+}
+
+/* Rounded corners for buttons */
+.share-button button:last-child {
+    margin-right: 0; /* Remove margin for last button */
+}
+
+/* Logo Styling */
+.logo-linkedin,
+.logo-github,
+.logo-instagram {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin-right: 5px; /* Add margin for spacing between logos */
+    border-radius: 50%; /* Rounded corners for logos */
+}
+
+
+/* Hover effect */
+.share-button button:hover {
+    background-color: #800080;
+    cursor: pointer;
+}
+
+/* Article Styling */
+article {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 0%;
+}
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-author {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.article-content {
+    margin-bottom: 10px;
+}
+
+.article-read-more {
+    color: #4B0082;
+    font-weight: bold;
+}
+
+.article-read-more:hover {
+    color: #800080;
+    cursor: pointer;
+}

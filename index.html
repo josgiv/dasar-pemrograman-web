@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeknoCorner - Profil Pribadi</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Custom Script -->
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex items-center justify-between py-4">
+            <div class="flex items-center">
+                <a href="index.html"><img src="assets\img\pngwing.com.png" alt="Logo TeknoCorner" class="h-8 mr-2"></a>
+                <h1 class="text-lg font-semibold"></h1>
+            </div>
+
+            <label for="checkbox_toggle" class="navbar-toggler md:hidden"><i class="fas fa-bars"></i></label>
+
+            <input type="checkbox" id="checkbox_toggle" class="hidden" />
+            <ul class="nav-links hidden md:flex space-x-4">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li class="services relative">
+                    <a href="#">Layanan <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown absolute hidden bg-white shadow-md py-2">
+                        <li><a href="#">Layanan 1</a></li>
+                        <li><a href="#">Layanan 2</a></li>
+                        <li><a href="#">Layanan 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="container mx-auto py-12">
+        <section class="hero bg-gradient-to-r from-blue-500 to-purple-500 text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-4">Teknologi Masa Depan</h2>
+                <p class="text-lg mb-6">Temukan informasi terbaru tentang teknologi masa depan di TeknoCorner!</p>
+                <a href="artikel.html" class="button bg-white text-blue-500 py-2 px-6 rounded-full inline-block hover:bg-blue-400 hover:text-white transition duration-300">Baca Selengkapnya</a>
+            </div>
+        </section>
+
+        <section class="container mx-auto py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <section class="md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="col-span-2">
+                            <article class="bg-white p-6 shadow-md flex">
+                                <div class="thumbnail mr-6">
+                                    <img src="assets\img\image.jpg" alt="Thumbnail Artikel" class="w-35 h-30 rounded-lg">
+                                </div>
+                                <div class="article-content">
+                                    <h2 class="text-xl font-semibold mb-4">Intel Core Ultra Resmi Diperkenalkan</h2>
+                                    <p class="text-sm mb-4">Josia Given</p>
+                                    <p class="mb-4">IIntel Core Ultra adalah salah satu terobosan terbesar dalam industri komputasi modern. Dengan kecepatan dan efisiensi yang luar biasa, prosesor ini memungkinkan pengguna</p>
+                                    <a href="artikel.html" class="text-blue-500 hover:underline">Baca Selengkapnya</a>
+                                </div>
+                            </article>
+                            <article class="bg-white p-6 shadow-md flex">
+                                <div class="thumbnail mr-6">
+                                    <img src="assets\img\bundle.jpg" alt="Thumbnail Artikel" class="w-50 h-0 rounded-lg">
+                                </div>
+                                <div class="article-content">
+                                    <h2 class="text-xl font-semibold mb-4">Performa Asus Zephyrus G16</h2>
+                                    <p class="text-sm mb-4">Josia Given</p>
+                                    <p class="mb-4">Intel Core Ultra adalah salah satu terobosan terbesar dalam industri komputasi modern. Dengan kecepatan dan efisiensi yang luar biasa, prosesor ini memungkinkan pengguna</p>
+                                    <a href="" class="text-blue-500 hover:underline">Baca Selengkapnya</a>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Sidebar -->
+                <aside class="md:col-span-1">
+                    <div class="bg-white p-4 shadow-md rounded-lg mb-8">
+                        <!-- Foto dan Bio Owner -->
+                        <div class="text-center mb-4">
+                            <img src="https://png.pngtree.com/png-vector/20210218/ourmid/pngtree-man-silhouette-png-image_2919625.jpg" alt="Foto Profil" class="owner-info-gambar rounded-full mb-3">
+
+                            <h3 class="text-lg font-semibold">Josia Given</h3>
+                            <p class="text-gray-600">Mahasiswa</p>
+                        </div>
+
+                        <!-- Link Media Sosial -->
+                        <div class="mb-4">
+                            <ul class="flex justify-center space-x-4">
+                                <li><a href="https://www.instagram.com/josgiv" class="text-gray-700 hover:text-blue-500" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                                <li><a href="https://github.com/josgiv" class="text-gray-700 hover:text-blue-500" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+                                <li><a href="https://www.linkedin.com/josiagivensantoso" class="text-gray-700 hover:text-blue-500" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Daftar Post Populer -->
+                        <div class="mb-4">
+                            <h3 class="text-lg font-semibold mb-2">Post Populer</h3>
+                            <ul>
+                              <li><a href="#" class="text-gray-700 hover:text-blue-500">Judul Post 1</a></li>
+                              <li><a href="#" class="text-gray-700 hover:text-blue-500">Judul Post 2</a></li>
+                              <li><a href="#" class="text-gray-700 hover:text-blue-500">Judul Post 3</a></li>
+                          </ul>
+                      </div>
+
+                      <!-- Tombol Bagikan -->
+                      <div class="text-center">
+                          <button id="share-button" class="bg-blue-500 text-white py-2 px-6 rounded-full inline-block hover:bg-blue-400 hover:text-white transition duration-300">Bagikan</button>
+                      </div>
+                  </div>
+              </aside>
+          </div>
+      </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+          <p>Hak Cipta &copy; 2024 TeknoCorner. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+</body>
+
+</html>
+
